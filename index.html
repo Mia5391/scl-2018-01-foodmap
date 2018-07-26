@@ -3,11 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
+
     <title>Foodmap</title>
 
 
   </head>
   <body>
+    <div id='map' style='width: 400px; height: 300px;'></div>
+<script> mapboxgl.accessToken = 'pk.eyJ1IjoibWlhazkxIiwiYSI6ImNqazJrcHNiMjBhajEzcG1pZWh5cXFwY24ifQ.GT7-fHC1mzMFVa1xbASKfA';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v10'
+  });
+</script>
+
     <div class="container">
         <span>Search by name: <input type="text" id="userInput"></span>
     <div>
