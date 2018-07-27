@@ -1,10 +1,10 @@
 
-//Zomato API call for restaurants
-const restaurants = fetchedRestaurants();
+/*Zomato API call for restaurants
+const restaurants = fetchRestaurantsFromAPI();
 
-function fetchRestaurantssFromZomatoAPI() {
+function fetchRestaurantsFromAPI() {
   let fetchedRestaurants = [];
-  fetch('API URL')
+  fetch('https://developers.zomato.com/api/v2.1/establishments?city_id=83')
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
@@ -23,5 +23,6 @@ const searchResult = filterRestaurants();
 window.filterRestaurants = (search) => {
   let search = "";
   let upperCaseSearch = search.toUpperCase();
-  return restaurants.filter(restaurant => restaurant.name.toUpperCase().includes(upperCaseSearch) || restaurant.cuisine.includes(upperCaseSearch));
+  return restaurants.filter(restaurant => restaurant.name.toUpperCase().includes(upperCaseSearch) ||
+         restaurant.cuisine.includes(upperCaseSearch));
 };

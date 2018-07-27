@@ -1,0 +1,22 @@
+.Splash-screen {
+  width: 320px;
+  height: 568px;
+}
+
+.Vista-principal {
+  width: 320px;
+  height: 705px;
+}
+
+.map {
+  width: 320px;
+  height: 220px;
+}
+
+.Mask {
+  width: 300px;
+  height: 48px;
+  border-radius: 5.5px;
+  background-color: #ffffff;
+  border: solid 1px #e6e6e6;
+}
