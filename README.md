@@ -5,13 +5,13 @@ This is a webapp that allows the user to find restaurants near them.
 #### Flujo de la aplicación.
 
 Splash view
-![Splash](https://github.com/AnaSalazar/curricula-js/blob/04-social-network/04-social-network/02-jquery/08-code-challenges/foodmap/splash.jpg?raw=true)
+![Splash](https://github.com/Mia5391/scl-2018-01-foodmap/blob/master/Mobile/SplashScreen.png?)
 
-Map view and filter
-![main view](https://github.com/AnaSalazar/curricula-js/blob/04-social-network/04-social-network/02-jquery/08-code-challenges/foodmap/2.jpg?raw=true)
+Main view
+![main view](https://github.com/Mia5391/scl-2018-01-foodmap/blob/master/Mobile/Vista%20principal.png)
 
 Filter results
-![vista filtrado](https://github.com/AnaSalazar/curricula-js/blob/04-social-network/04-social-network/02-jquery/08-code-challenges/foodmap/3.jpg?raw=true)
+![vista filtrado](https://github.com/Mia5391/scl-2018-01-foodmap/blob/master/Mobile/Vista%20principal%20-%20filtrado.png)
 
 Selected restaurant info view:
-![popup view](https://github.com/AnaSalazar/curricula-js/blob/04-social-network/04-social-network/02-jquery/08-code-challenges/foodmap/5.jpg?raw=true)
+![popup view](https://github.com/Mia5391/scl-2018-01-foodmap/blob/master/Mobile/Vista%20principal%20-%20Pop-Up.png)
