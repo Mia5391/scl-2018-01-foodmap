@@ -2,7 +2,7 @@
 
 This is a webapp that allows the user to find restaurants near them.
 
-#### Flujo de la aplicación.
+#### App flow:
 
 Splash view
 ![Splash](https://github.com/Mia5391/scl-2018-01-foodmap/blob/master/Mobile/SplashScreen.png?)
