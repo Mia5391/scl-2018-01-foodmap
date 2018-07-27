@@ -6,9 +6,6 @@
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
 
-    <title>Foodmap</title>
-
-
   </head>
   <body>
     <div id='map' style='width: 400px; height: 300px;'></div>
@@ -30,6 +27,12 @@
           trackUserLocation: true
       }));
     </script>
+    <div class="container">
+        <span>Search by name: <input type="text" id="userInput"></span>
+    </div>
+    <script src="location.js" charset="utf-8"></script>
+    <script src="restaurants.js" charset="utf-8"></script>
+    <script src="style.css" charset="utf-8"></script>
 
   </body>
 </html>

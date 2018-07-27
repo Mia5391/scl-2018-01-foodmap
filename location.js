@@ -1,5 +1,7 @@
 window.onload = function browserSupportLocation(){
 	let output = document.getElementById('map');
+  let latitude = 0;
+  let longitude = 0;
 
 	if (navigator.geolocation) {
 		navigator.geolocation.watchPosition(obtainCoordinates);
@@ -7,9 +9,17 @@ window.onload = function browserSupportLocation(){
 		output.innerHTML = "<p>Congratulations! Your browser has no idea where you are</p>";
 	};
 
+  function showRestaurantList(){
+    let restaurantList = fetchRestaurantsFromAPI(userInput,latitude.toString(),longitude.toString());
+    console.log(restaurantList);
+  }
+
 	function obtainCoordinates(position){
-		let latitude = position.coords.latitude;
-		let longitude = position.coords.longitude;
+		latitude = position.coords.latitude;
+		longitude = position.coords.longitude;
+
+    showRestaurantList()
+    
     console.log(latitude);
     console.log(longitude);
 	};
@@ -19,7 +29,5 @@ window.onload = function browserSupportLocation(){
       enableHighAccuracy:true
     };
   }
-
-
 
 };
