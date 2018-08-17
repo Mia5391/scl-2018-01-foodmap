@@ -9,9 +9,16 @@ window.onload = function browserSupportLocation(){
 		output.innerHTML = "<p>Congratulations! Your browser has no idea where you are</p>";
 	};
 
+	showRestaurantList();
+
   function showRestaurantList(){
-    let restaurantList = fetchRestaurantsFromAPI(userInput,latitude.toString(),longitude.toString());
-    console.log(restaurantList);
+    let apiResponse = fetchRestaurantsFromAPI(userInput,latitude.toString(),longitude.toString());
+		console.log(apiResponse);
+
+		for (let restaurant in apiResponse){
+			restaurantListDiv.innerHTML+='<div>'+restaurant.restaurant.name+'</div>'
+		}
+    console.log(apiResponse);
   }
 
 	function obtainCoordinates(position){
@@ -19,7 +26,7 @@ window.onload = function browserSupportLocation(){
 		longitude = position.coords.longitude;
 
     showRestaurantList()
-    
+
     console.log(latitude);
     console.log(longitude);
 	};
